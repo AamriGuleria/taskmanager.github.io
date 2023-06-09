@@ -1,13 +1,186 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+*{
+    margin:0;
+    box-sizing:border-box;
 }
-
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.main-container{
+    margin:100px;
+    max-width:300px;
+    height:400px;
+    padding-top:40px;
+    padding-bottom:50px;
+    padding-left:10px;
+    padding-right:10px;
+    border:none;
+}
+.head{
+    margin:30px;
+    font-size:40px;
+}
+.email{
+    width:250px;
+    height:40px;
+    border:2px solid blue;
+    background-color: transparent;
+    border-radius:8px;
+    margin-top:10px;
+}
+.password{
+    width:250px;
+    height:40px;
+    border:2px solid blue;
+    background-color: transparent;
+    border-radius:8px;
+    margin-top:20px;
+    
+}
+.register{
+    width:250px;
+    height:40px;
+    border:none;
+    background-color: rgba(66, 66, 247, 0.913);
+    border-radius:8px;
+    margin-top:20px;
+}
+.register:hover{
+    background-color: transparent;
+}
+.login{
+    color:black;
+    width:250px;
+    height:40px;
+    border:none;
+    background-color:transparent;
+    border-radius:8px;
+    margin-top:20px;
+}
+.head{
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color:black;
+}
+#temp{
+    color:white;
+}
+.total-container{
+    width:100%;
+    padding:10px;
+    background-color: white;
+    height:100vh;
+    overflow-x:visible;
+}
+.main-inputs{
+    max-width:400px;
+    padding-left:20px;
+    padding-right:20px;
+    padding-top:10px;
+    padding-bottom:10px;
+}
+input{
+    background-color: rgb(248, 229, 234);
+    border:none;
+    border-radius:10px ;
+    height:30px;
+    margin:8px;
+    width:300px;
+}
+#submit{
+    border:none;
+    border-radius:10px ;
+    height:30px;
+    margin:8px;
+    width:300px;
+}
+.datas{
+    padding:5px;
+    background-color: transparent;
+    display:flex;
+    gap:5px;
+    overflow-wrap: break-word;
+}
+.single-task{
+    overflow-wrap: break-word;
+    margin:20px;
+    border-radius:15px;
+    background-color:rgb(248, 246, 228);
+    border:2px solid rgb(251, 246, 206);
+    display:grid;
+    grid-template-columns: repeat(1fr,4px);
+    grid-gap:2px;
+    overflow:auto;
+}
+.status{
+    margin:10px;
+    max-width:300px;
+    height:40px;
+    overflow-wrap: break-word;
+    word-wrap: break-word;
+    display:inline-flex;
+    flex-wrap:wrap;
+    align-content: center;
+    column-gap: 2px;
+    box-sizing: border-box;
+}
+.task-title{
+    margin-top:10px;
+    max-width:200px;
+}
+.task-date{
+    margin-top:10px;
+    font-size:12px;
+    background-color: transparent;
+    margin-right:80px;
+}
+.task-desc{
+    margin-top:10px;
+    margin-bottom:10px;
+}
+.desc-div{
+    margin:30px;
+    background-color:rgb(242, 237, 189);
+    border-radius: 6px;
+    overflow-wrap: break-word;
+    word-wrap: break-word;
+}
+.datas{
+    background-color: transparent;
+    padding-left:120px;
+    padding-right:120px;
+    overflow-wrap: break-word;
+    display:flex;
+    flex-wrap:wrap;
+    word-wrap: break-word;
+}
+.buttons{
+    padding: 10px;
+}
+#delete{
+    margin: 10px;
+    border:none;
+    border-radius: 6px;
+    padding:3px;
+    border-bottom: 2px solid rgb(216, 137, 163);
+    background-color: rgb(241, 206, 219);
+}
+#edit{
+    background-color: rgb(241, 206, 219);
+    margin: 10px;
+    border:none;
+    border-radius: 6px;
+    padding:3px;
+    border-bottom: 2px solid rgb(216, 137, 163);
+}
+.tasks-head{
+    margin:15px;
+    text-decoration: underline;
+    font-size: 25px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+#temp{
+    color:black;
+}
+.footer{
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    position: fixed;
+    background-color: rgb(181, 250, 116);
 }
